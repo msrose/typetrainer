@@ -1,0 +1,40 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TextToType {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: monospace;
+}
+
+.ShadowText {
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.ShadowText .Incorrect {
+  color: red;
+  text-decoration: underline;
+}
+
+.TextToType .Correct {
+  color: green;
+  text-decoration: underline;
+}
+
+.TextToType .Incorrect {
+  text-decoration: underline;
+}
+
+.ShadowText .Correct, .ShadowText .Untyped {
+  visibility: hidden;
+}
+
+.InputField {
+  width: 500px;
+  margin-bottom: 20px;
+}
