@@ -4,16 +4,26 @@
   align-items: center;
 }
 
-.TextToType {
+.TextToType, .ShadowText {
   font-weight: bold;
-  margin-bottom: 20px;
   font-family: monospace;
+  font-size: 1.5em;
+}
+
+.TextToType {
+  margin-bottom: 20px;
+}
+
+.TextToType .Current {
+  border-right: 1px solid black;
+}
+
+.TextToType .First {
+  border-left: 1px solid black;
 }
 
 .ShadowText {
   margin-top: 20px;
-  font-weight: bold;
-  font-family: monospace;
 }
 
 .ShadowText .Incorrect {

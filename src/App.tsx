@@ -41,6 +41,12 @@ function App() {
     } else if (typedText.length > i) {
       typedClassName = "Incorrect";
     }
+    if (i === typedText.length - 1) {
+      typedClassName += " Current";
+    }
+    if (i === 0 && typedText.length === 0) {
+      typedClassName += " First";
+    }
     return typedClassName;
   };
 
@@ -71,6 +77,7 @@ function App() {
         </div>
       </div>
       <textarea
+        autoFocus
         onChange={(e: ChangeEvent<HTMLTextAreaElement>) => {
           setTypedText(e.target.value);
           if (startTime === null) {
